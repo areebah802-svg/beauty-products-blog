@@ -59,6 +59,37 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.related-articles {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff0f5; 
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.related-articles h2 {
+  color: #ff6f91;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.related-articles p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.related-articles a {
+  color: #ff3f6c;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.related-articles a:hover {
+  text-decoration: underline;
+  color: #ff1c54;
+}
 .reviews {
   display: flex;
   flex-wrap: wrap;      
