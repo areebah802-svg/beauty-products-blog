@@ -25,7 +25,7 @@ a {
 
 /* ===== HEADER ===== */
 .top-header {
-  background-color: #f9f9f9;
+  background-color: #fcdddd;
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
@@ -65,20 +65,59 @@ a {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  background: linear-gradient(135deg, #5b0a2a, #c39ba9);
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero h2 {
   font-size: 2rem;
-  color: #d63384;
+  color: #030303;
   margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.1rem;
-  color: #555;
+  color: #f5efef;
+}
+/* Hero Section with background image */
+.hero {
+  position: relative;
+  background-image: url('background.png'); /* replace with your image path */
+  background-size: cover;       /* makes image cover entire section */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat;
+  background-color: #888;
+  padding: 100px 20px;          /* space for content */
+  color: #fff;                  /* text color over image */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Optional dark overlay for readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.section-title h2 {
+  color: #c50967;
+
+}
+
+.section-title p {
+  color: #96536e;
+  
+}
+
+/* Keep text above overlay */
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 /* ===== ARTICLE PAGE ===== */
@@ -159,7 +198,7 @@ a {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(174, 18, 140, 0.05);
   transition: transform 0.3s;
 }
 
@@ -202,6 +241,11 @@ a {
   background-color: #b0276b;
 }
 
+/* Place text above the overlay */
+.featured-section.bg-articles .section-title {
+  position: relative;
+  z-index: 2;
+}
 /* ===== HIGHLIGHT BOX ===== */
 .highlight-box {
   background-color: #ffe6f0;
@@ -276,7 +320,6 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
-
 /* =======================
    Hero / Navbar Section
 ======================= */
