@@ -2,57 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Glow Beauty</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <!-- Hero / Navbar Section -->
-<header class="hero-header">
-  <div class="hero-content">
-    <h1>Glow Beauty</h1>
-    <nav class="hero-nav">
-      <a href="index.html">Home</a>
-      <a href="articles.html">Articles</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact-us.html">Contact</a>
-    </nav>
-  </div>
-</header>
-  <main>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="articles.html">Articles</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
+  <!-- Hero Header Section -->
+  <section class="hero-contact">
+    <div class="hero-contact-content">
+      <h1>Contact Us</h1>
       <p>We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.</p>
-
-      <form action="mailto:your-email@example.com" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <h3>Glow Beauty</h3>
-      <p>Your trusted source for beauty, skincare, makeup, and haircare advice in Pakistan.</p>
-
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="contact-us.html">Contact</a>
-      </div>
-
-      <p class="copyright">© 2026 Glow Beauty | All Rights Reserved</p>
     </div>
-  </footer>
+  </section>
+
+  <!-- Main Contact Form Section -->
+  <main>
+    <section id="contact-form">
+      <div class="container">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
