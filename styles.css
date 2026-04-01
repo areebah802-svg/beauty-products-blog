@@ -124,25 +124,35 @@ img {
   font-weight: 600;
   transition: 0.3s;
 }
+.hero-buttons .primary-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
 .hero-buttons .btn {
   background: #d63384;
-  color: #fff;
+  color: #ed1c8b;
 }
 
 .hero-buttons .btn:hover {
   background: #b0256c;
 }
 
+.hero-buttons .primary-btn {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
 .hero-buttons .secondary-btn {
   background: rgba(255,255,255,0.15);
   color: #fff;
   border: 1px solid rgba(255,255,255,0.4);
-}
-
-.hero-buttons .secondary-btn:hover {
-  background: #fff;
-  color: #d63384;
+  border-radius: 10px;
 }
 
 /* ===== COMMON SECTION TITLE ===== */
@@ -433,25 +443,11 @@ img {
 #contact {
   background: #fff;
   padding: 70px 20px;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 2.2rem;
-  color: #d63384;
-  margin-bottom: 12px;
-}
-
-#contact p {
-  font-size: 1rem;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 35px;
 }
 
 #contact form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 35px auto 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -492,6 +488,7 @@ img {
 #contact button:hover {
   background: #b0256c;
 }
+
 /* ===== FOOTER ===== */
 .footer {
   background: #222;
