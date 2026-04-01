@@ -228,7 +228,111 @@ img {
 .featured-section {
   padding: 60px 0;
 }
+/* ===== HERO CONTACT SECTION ===== */
+.hero-contact {
+  background: linear-gradient(135deg, #ffdee9, #ffb6c1); /* soft pink gradient */
+  text-align: center;
+  padding: 100px 20px;
+  color: #d63357; /* dark pink text */
+}
 
+.hero-contact h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-contact p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #a6003c;
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+#contact-form {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#contact-form .container {
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #f0bfd5;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #d63384;
+}
+
+#contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+#contact-form button {
+  background: #d63384;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact-form button:hover {
+  background: #b0256c;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #d63384;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-contact h1 {
+    font-size: 2rem;
+  }
+  .hero-contact p {
+    font-size: 1rem;
+  }
+}
 /* ===== ARTICLES GRID ===== */
 .articles-grid {
   display: grid;
