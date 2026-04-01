@@ -513,36 +513,47 @@ img {
 
 /* ===== REVIEWS ===== */
 #reviews {
-  background: #faf7fa;
   padding: 70px 20px;
+  background: #fff7fb;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 2.3rem;
+  color: #d63384;
+  margin-bottom: 40px;
 }
 
 .reviews-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .review-card {
   background: #fff;
-  padding: 30px 24px;
+  padding: 30px 20px;
   border-radius: 18px;
-  max-width: 320px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(214, 51, 132, 0.12);
+  transition: 0.3s ease;
 }
 
-.review-card p {
-  color: #555;
-  margin-bottom: 15px;
-  font-style: italic;
+.review-card:hover {
+  transform: translateY(-8px);
 }
 
-.review-card span {
+.review-stars {
+  color: #f7b500;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.review-card h3 {
   color: #d63384;
-  font-weight: 600;
-}
-
+  margin-bottom: 12px;
+  font-size:
 /* ===== CONTACT ===== */
 #contact {
   background: #fff;
